@@ -1,4 +1,3 @@
-// CODE here for your Lambda Classes
 class Person{
     constructor(attrs){
       this.name = attrs.name;
@@ -79,10 +78,16 @@ class Person{
     favSubjects: ['Html', 'CSS', 'JavaScript']
   })
   
+  const sara = new ProjectManager({
+    gradClassName: 'WEB21',
+    favInstructor: 'Marguel'
+  })
+  
   console.log(fred.speak());//Hello my name is Fred, I am from Bedrock
   console.log(fred.demo('English'));//Today we are learning about English
   console.log(fred.grade(jay,'Coding'));//Jay receives a perfect score on Coding
   console.log(alex.listsSubjects());//[ 'Html', 'CSS', 'JavaScript' ]
   console.log(alex.PRAssignment(fred,'CSS'));//Fred has submitted a PR for CSS
   console.log(alex.sprintChallenge(fred,'HTML'))//Jay has begun sprint challenge on HTML
-  
+  console.log(sara.debugsCode('John',fred,'Operation'));//John debugs Jay's code on Operation
+  console.log(sara.standUp('Jason','slack'));//Jason announces to slack, @channel standy times!​​​​​
